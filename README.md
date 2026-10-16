@@ -36,8 +36,11 @@ https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p04-layout-manager/
 # Deklarasi Penggunaan AI
 https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p04-layout-manager/Deklarasi%20Penggunaan%20AI.txt
 
+# Tahap 1: Sketsa
+<img width="934" height="1280" alt="Foto sketsa" src="https://github.com/user-attachments/assets/6f59da2e-6329-45e8-9e13-4d9eaee68920" />
+
 # Tahap 2: Tabel Rancangan
 <img width="409" height="215" alt="Screenshot 2026-10-13 174220" src="https://github.com/user-attachments/assets/2382b271-0e62-4f64-a740-fc0eb48a746f" />
 
-# Tahap 4: Saling Menilai
+# Tahap 4: Saling Menilai (dinilai oleh Akbar Ihsan Nugraha)
 <img width="498" height="151" alt="Screenshot 2026-10-13 173511" src="https://github.com/user-attachments/assets/8fa21738-cd75-4fc6-9abf-c539fa66f5ac" />
