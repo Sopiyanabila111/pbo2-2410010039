@@ -1,0 +1,9 @@
+Deklarasi Penggunaan AI
+
+Alat yang digunakan: Claude (Anthropic).
+
+1.Menjelaskan konsep layout manager (BorderLayout, FlowLayout, GridLayout, dll.).
+2.Membantu merancang struktur tata letak antarmuka (GUI).
+3.Membantu menelusuri dan memperbaiki error (debugging) pada kode.
+4.Membantu menyusun dokumentasi atau README.
+5.Mengatur jarak dan margin antar komponen, misalnya insets.
