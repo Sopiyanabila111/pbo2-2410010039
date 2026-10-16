@@ -1,0 +1,7 @@
+1.Error, karena constructor Koleksi tidak sesuai parameternya.
+
+2.Ada @Override → error. Kalau dihapus → dianggap method baru.
+
+3.Buku tetap dibuat, tapi judulnya kosong.
+
+4.Melanggar enkapsulasi, karena status diubah langsung dari main
