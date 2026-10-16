@@ -5,6 +5,7 @@
 <img width="1920" height="1080" alt="Screenshot (231)" src="https://github.com/user-attachments/assets/80ff49c3-0a91-4cb6-9feb-01fa45a88485" />
 <img width="425" height="92" alt="Screenshot 2026-09-19 194815" src="https://github.com/user-attachments/assets/18b2060f-9fc3-42e3-a1cb-a20c9814cfa0" />
 
+
 # P02 SCREENSHOOT Tinjau Ulang PBO1
 <img width="638" height="271" alt="Screenshot 2026-10-13 150342" src="https://github.com/user-attachments/assets/aec1fed1-c130-492a-9ef7-4e601f056eb7" />
 
@@ -22,6 +23,7 @@ https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p02-perpustakaan-mi
  
 # Pertanyaan Refleksi P03
 https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p03-komponen-gui/G.%20Pertanyaan%20Refleksi.txt
+
 
 # P04 SCREENSHOOT Layout Manager
 <img width="1920" height="1080" alt="Screenshot (236)" src="https://github.com/user-attachments/assets/cb8399ed-1a9a-4448-bc45-e949ee41c0fd" />
