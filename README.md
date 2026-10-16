@@ -13,11 +13,9 @@ https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p02-perpustakaan-mi
 
 # P03 SCREENSHOOT Komponen GUI Swing
 <img width="791" height="479" alt="Screenshot 2026-10-02 210007" src="https://github.com/user-attachments/assets/f4c89c9d-772f-40be-9e63-28a2cf2da046" />
-
-#Mode Terang
+# Mode Terang
 <img width="457" height="341" alt="Screenshot 2026-10-02 205824" src="https://github.com/user-attachments/assets/7f168c6c-97b0-4828-a3ab-907a38ad38b8" />
-
-#Mode Gelap
+# Mode Gelap
 <img width="571" height="392" alt="Screenshot 2026-10-02 205829" src="https://github.com/user-attachments/assets/91ae0238-c498-40e4-aedd-6a964b35e78d" />
  
 # Pertanyaan Refleksi P03
