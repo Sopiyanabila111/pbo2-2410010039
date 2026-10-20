@@ -1,4 +1,4 @@
-# pbo2-2410010039
+[Eksperimen Praktikum 4 Kalkulator Sederhana.txt](https://github.com/user-attachments/files/33706858/Eksperimen.Praktikum.4.Kalkulator.Sederhana.txt)# pbo2-2410010039
 
 # P01 SCREENSHOOT Lingkungan Java, Maven, Git
 <img width="1920" height="1080" alt="Screenshot (230)" src="https://github.com/user-attachments/assets/7f7db4aa-2f7b-431f-b340-e308ef6b1e70" />
@@ -56,5 +56,8 @@ https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p04-layout-manager/
 <img width="295" height="346" alt="Screenshot 2026-10-20 153157" src="https://github.com/user-attachments/assets/ff150a30-b840-41c7-b0ab-da6ed5149cb4" />
 <img width="296" height="325" alt="Screenshot 2026-10-20 153212" src="https://github.com/user-attachments/assets/5eb7e794-5e08-4f86-9b63-09ca784ba0ec" />
 <img width="288" height="444" alt="Screenshot 2026-10-20 160652" src="https://github.com/user-attachments/assets/b5f07a03-87cf-4d70-8540-69088c3f9448" />
+
+# Eksperimen Praktikum 3 Konversi Suhu
+[Uplo[Eksperimen Praktikum 3 Konversi Suhu.txt](https://github.com/user-attachments/files/33706860/Eksperimen.Praktikum.3.Konversi.Suhu.txt)ading Eksperimen Praktikum 4 Kalkulator Sederhana.txt…]()
 
 
