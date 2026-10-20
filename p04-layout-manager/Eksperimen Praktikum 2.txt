@@ -1,0 +1,10 @@
+1. flowPanel: Alignment = Center, jendela dikecilkan
+
+Dengan alignment Center, komponen di setiap baris diposisikan di tengah panel, bukan rata kiri (default LEADING/LEFT) atau rata kanan.
+Saat jendela dikecilkan, FlowLayout melakukan wrap: komponen yang tidak muat pindah ke baris baru. Tiap baris tetap terpusat secara horizontal, sehingga sisa ruang kosong terbagi rata di kiri dan kanan.
+
+2.: pada GridLayout(rows, cols), jika rows = 0, layout manager membebaskan jumlah baris dan hanya memegang jumlah kolom. Jika kedua nilai diisi bukan nol, nilai cols diabaikan dan jumlah kolom dihitung dari rows, jadi isi Rows = 0 diperlukan agar Columns = 2 berlaku. Barisnya bertambah mengikuti banyaknya komponen yang ditambahkan.
+
+3.BoxLayout menghormati maximumSize. Dengan Y_AXIS (tombol bertumpuk vertikal), lebar tombol secara default hanya sebesar preferred size-nya, sehingga tombol-tombol itu memiliki lebar berbeda-beda sesuai teksnya.
+Setelah maximumSize lebar diisi 32767 (praktis tak terbatas), tombol boleh melebar sampai selebar panel, sehingga semua tombol melebar mengisi lebar panel dan menjadi sama lebar, serta ikut menyesuaikan saat jendela diubah ukurannya.
+Tinggi tetap sama dengan tinggi tombol, jadi tombol tidak ikut memanjang secara vertikal.

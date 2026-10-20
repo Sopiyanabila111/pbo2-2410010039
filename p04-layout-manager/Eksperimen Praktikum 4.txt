@@ -1,0 +1,11 @@
+1. Weight X namaField = 0.0, lalu jendela dilebarkan
+Weight X menentukan siapa yang mendapat sisa ruang horizontal saat jendela melebar. Dengan nilai 0.0, namaField tidak mendapat bagian tambahan, jadi lebarnya tetap seperti ukuran awal (preferred size) dan tidak ikut memanjang. Ruang kosong akan dibiarkan di samping, atau diberikan ke komponen lain yang weight X-nya lebih dari 0. Sebelumnya (misalnya 1.0), isian ikut melebar mengikuti jendela.
+
+2. Direction formPanel dari North menjadi Center, lalu jendela ditinggikan
+North: formPanel hanya setinggi isinya dan menempel di bagian atas. Saat jendela ditinggikan, tinggi formPanel tidak berubah. Sisa ruang di bawahnya kosong.
+Center: formPanel mengambil seluruh sisa ruang, jadi ikut meninggi. Di dalamnya, GridBagLayout akan membagi ruang tambahan tersebut. Baris yang weight Y-nya 0 tetap rapat di tengah, sedangkan komponen dengan weight Y lebih dari 0 ikut memanjang ke bawah.
+
+Perbedaan utamanya: North membuat form tidak melar secara vertikal, Center membuatnya mengisi tinggi jendela.
+
+3. Menghapus setMinimumSize(getSize()), lalu jendela dikecilkan sekecil mungkin
+Tanpa batas ukuran minimum, jendela bisa dikecilkan melebihi ruang yang dibutuhkan isinya. Yang rusak lebih dulu biasanya isian dan label yang paling lebar: teks mulai terpotong (muncul “...” pada label atau tombol), JTextField menyusut menjadi sangat sempit, dan komponen di baris bawah mulai tertutup atau hilang karena layout kehabisan ruang. Pada akhirnya jendela bisa menyusut sampai hanya tersisa title bar. Baris setMinimumSize(getSize()) mencegah semua itu dengan mengunci ukuran terkecil sebesar ukuran awal jendela.

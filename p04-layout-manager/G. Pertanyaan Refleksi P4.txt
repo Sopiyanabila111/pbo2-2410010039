@@ -1,0 +1,17 @@
+1. Mengapa Null Layout dan Absolute Layout dihindari?
+Posisi dan ukuran komponen ditulis manual dalam piksel (setBounds), sehingga tidak menyesuaikan saat jendela diubah ukurannya. Tampilan juga bisa rusak di layar dengan resolusi atau DPI berbeda, saat font berubah, atau saat teks diganti bahasa lain. Kode pun sulit dirawat karena menambah satu komponen berarti menggeser koordinat semua yang lain.
+
+2. Perbedaan FlowLayout dan GridLayout saat jendela dilebarkan
+FlowLayout: komponen mempertahankan ukuran aslinya (preferred size) dan hanya berpindah posisi. Bila ruang cukup, lebih banyak komponen muat dalam satu baris, dan bila sempit, komponen turun ke baris berikutnya.
+GridLayout: ruang dibagi rata ke sel-sel grid dengan jumlah baris dan kolom tetap. Setiap komponen ikut melebar (dan meninggi) sama besar mengikuti ukuran jendela.
+
+3. Fungsi Weight X dan Fill pada GridBagLayout
+Weight X menentukan pembagian sisa ruang horizontal. Komponen dengan weight lebih besar mendapat bagian lebih banyak, sedangkan 0.0 berarti tidak mendapat tambahan.
+Fill menentukan apakah komponen memenuhi sel yang tersedia (NONE, HORIZONTAL, VERTICAL, BOTH). Weight hanya memperbesar sel, sedangkan fill yang membuat komponen benar-benar mengisi sel itu. Biasanya keduanya dipakai bersama agar JTextField ikut memanjang saat jendela dilebarkan.
+
+4. Mengapa formPanel dibungkus isiPanel dan diletakkan di North?
+Jika formPanel langsung diletakkan di Center, form akan dipaksa mengisi seluruh area sehingga isiannya melar dan jaraknya renggang saat jendela ditinggikan. Dengan isiPanel ber-BorderLayout dan formPanel di North, form hanya setinggi isinya dan menempel di atas, sedangkan sisa ruang kosong di bawah. Bungkus ini juga memberi tempat untuk padding atau komponen lain, misalnya panel tombol di South.
+
+5. Dua prinsip desain dan buktinya
+Konsistensi (alignment dan susunan seragam): semua label rata kiri dalam satu kolom dan semua isian sejajar di kolom kedua. Bukti: pada GridBagLayout, label memakai gridx = 0 dan field memakai gridx = 1 dengan anchor yang sama, serta insets seragam untuk setiap baris.
+Responsif (menyesuaikan ukuran jendela): isian ikut memanjang saat jendela dilebarkan. Bukti: weightx = 1.0 dan fill = HORIZONTAL pada field, serta setMinimumSize(getSize()) agar jendela tidak mengecil sampai komponen rusak.
