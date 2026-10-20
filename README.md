@@ -54,10 +54,32 @@ https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p04-layout-manager/
 
  # P05 SCREENSHOOT Event Handling
 <img width="295" height="346" alt="Screenshot 2026-10-20 153157" src="https://github.com/user-attachments/assets/ff150a30-b840-41c7-b0ab-da6ed5149cb4" />
+
 <img width="296" height="325" alt="Screenshot 2026-10-20 153212" src="https://github.com/user-attachments/assets/5eb7e794-5e08-4f86-9b63-09ca784ba0ec" />
+
 <img width="288" height="444" alt="Screenshot 2026-10-20 160652" src="https://github.com/user-attachments/assets/b5f07a03-87cf-4d70-8540-69088c3f9448" />
 
 # Eksperimen Praktikum 3 Konversi Suhu
-[Uplo[Eksperimen Praktikum 3 Konversi Suhu.txt](https://github.com/user-attachments/files/33706860/Eksperimen.Praktikum.3.Konversi.Suhu.txt)ading Eksperimen Praktikum 4 Kalkulator Sederhana.txt…]()
+[Eksperimen Praktikum 3 Konversi Suhu.txt](https://github.com/user-attachments/files/33706902/Eksperimen.Praktikum.3.Konversi.Suhu.txt)
+1. Pesan tercetak berapa kali?
+Dua kali setiap pilihan diganti. ItemEvent dipicu satu kali untuk item lama yang berubah menjadi DESELECTED, dan satu kali lagi untuk item baru yang menjadi SELECTED. Pemeriksaan getStateChange() == SELECTED tadinya menyaring agar hanya satu yang diproses.
+
+2. Mengapa terlambat satu karakter?
+keyPressed terpicu saat tombol ditekan, sebelum karakter dimasukkan ke dalam isian. Jadi getText() masih mengembalikan teks lama, tanpa karakter yang baru diketik. keyReleased terpicu setelah karakter masuk, sehingga teksnya sudah lengkap.
+
+3. Apa yang muncul di Output?
+Muncul NumberFormatException (misalnya java.lang.NumberFormatException: For input string: "a") beserta stack trace. Ini terjadi karena Double.parseDouble() gagal mengubah huruf menjadi angka dan tidak ada catch yang menangkapnya. Program tidak berhenti, tetapi konversi tidak berjalan dan hasil tidak diperbarui.
+
+# Eksperimen Praktikum 4 Kalkulator Sederhana
+1. Berapa kali pesan tercetak?
+Dua kali setiap tombol ditekan, karena ada dua listener terdaftar pada tombol yang sama dan keduanya dijalankan. Satu tombol sebaiknya hanya memakai satu cara agar perilakunya tidak ganda (perhitungan atau pesan berulang), mudah dilacak, dan tidak membingungkan saat kode diubah, karena kode di Events (bagian yang dihasilkan editor) dan lambda di konstruktor tersebar di dua tempat.
+
+2. Tombol %: apa yang diubah?
+Tab Design: tambahkan JButton baru, beri nama variabel (misalnya modButton) dan teks %, lalu atur posisinya di tata letak.
+Tab Source: tambahkan penanganan klik untuk tombol itu (lambda atau event actionPerformed) yang menghitung a % b, dan tampilkan hasilnya di isian hasil.
+
+3. Mengapa kursor langsung di isian pertama?
+Karena method Hapus memanggil requestFocus() pada isian pertama setelah mengosongkan semua isian, sehingga pengguna bisa langsung mengetik data baru tanpa mengklik isian itu dulu. Kalkulator Sederhana
+[Eksperimen Praktikum 4 Kalkulator Sederhana.txt](https://github.com/user-attachments/files/33706930/Eksperimen.Praktikum.4.Kalkulator.Sederhana.txt)
 
 
