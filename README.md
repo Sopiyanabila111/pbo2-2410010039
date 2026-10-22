@@ -50,7 +50,6 @@ Atomic component = komponen yang langsung digunakan, contoh JButton.
 
 # Eksperimen Praktikum 2 P04
 [Eksperimen Praktikum 2.txt](https://github.com/user-attachments/files/33807151/Eksperimen.Praktikum.2.txt)
-
 1. flowPanel: Alignment = Center, jendela dikecilkan
 Dengan alignment Center, komponen di setiap baris diposisikan di tengah panel, bukan rata kiri (default LEADING/LEFT) atau rata kanan.
 Saat jendela dikecilkan, FlowLayout melakukan wrap: komponen yang tidak muat pindah ke baris baru. Tiap baris tetap terpusat secara horizontal, sehingga sisa ruang kosong terbagi rata di kiri dan kanan.
@@ -63,7 +62,6 @@ Tinggi tetap sama dengan tinggi tombol, jadi tombol tidak ikut memanjang secara 
 
 # Eksperimen Praktikum 4 P04
 [Eksperimen Praktikum 4.txt](https://github.com/user-attachments/files/33807180/Eksperimen.Praktikum.4.txt)
-
 1. Weight X namaField = 0.0, lalu jendela dilebarkan
 Weight X menentukan siapa yang mendapat sisa ruang horizontal saat jendela melebar. Dengan nilai 0.0, namaField tidak mendapat bagian tambahan, jadi lebarnya tetap seperti ukuran awal (preferred size) dan tidak ikut memanjang. Ruang kosong akan dibiarkan di samping, atau diberikan ke komponen lain yang weight X-nya lebih dari 0. Sebelumnya (misalnya 1.0), isian ikut melebar mengikuti jendela.
 
@@ -99,12 +97,16 @@ Responsif (menyesuaikan ukuran jendela): isian ikut memanjang saat jendela dileb
 # Deklarasi Penggunaan AI
 [Deklarasi Penggunaan AI.txt](https://github.com/user-attachments/files/33807285/Deklarasi.Penggunaan.AI.txt)
 
-Deklarasi Penggunaan AI
 Alat yang digunakan: Claude (Anthropic).
+
 1.Menjelaskan konsep layout manager (BorderLayout, FlowLayout, GridLayout, dll.).
+
 2.Membantu merancang struktur tata letak antarmuka (GUI).
+
 3.Membantu menelusuri dan memperbaiki error (debugging) pada kode.
+
 4.Membantu menyusun dokumentasi atau README.
+
 5.Mengatur jarak dan margin antar komponen, misalnya insets.
 
 # Tahap 1: Sketsa
@@ -136,6 +138,8 @@ keyPressed terpicu saat tombol ditekan, sebelum karakter dimasukkan ke dalam isi
 Muncul NumberFormatException (misalnya java.lang.NumberFormatException: For input string: "a") beserta stack trace. Ini terjadi karena Double.parseDouble() gagal mengubah huruf menjadi angka dan tidak ada catch yang menangkapnya. Program tidak berhenti, tetapi konversi tidak berjalan dan hasil tidak diperbarui.
 
 # Eksperimen Praktikum 4 Kalkulator Sederhana
+[Eksperimen Praktikum 4 Kalkulator Sederhana.txt](https://github.com/user-attachments/files/33706930/Eksperimen.Praktikum.4.Kalkulator.Sederhana.txt)
+
 1. Berapa kali pesan tercetak?
 Dua kali setiap tombol ditekan, karena ada dua listener terdaftar pada tombol yang sama dan keduanya dijalankan. Satu tombol sebaiknya hanya memakai satu cara agar perilakunya tidak ganda (perhitungan atau pesan berulang), mudah dilacak, dan tidak membingungkan saat kode diubah, karena kode di Events (bagian yang dihasilkan editor) dan lambda di konstruktor tersebar di dua tempat.
 
@@ -144,7 +148,5 @@ Tab Design: tambahkan JButton baru, beri nama variabel (misalnya modButton) dan 
 Tab Source: tambahkan penanganan klik untuk tombol itu (lambda atau event actionPerformed) yang menghitung a % b, dan tampilkan hasilnya di isian hasil.
 
 3. Mengapa kursor langsung di isian pertama?
-Karena method Hapus memanggil requestFocus() pada isian pertama setelah mengosongkan semua isian, sehingga pengguna bisa langsung mengetik data baru tanpa mengklik isian itu dulu. Kalkulator Sederhana
-[Eksperimen Praktikum 4 Kalkulator Sederhana.txt](https://github.com/user-attachments/files/33706930/Eksperimen.Praktikum.4.Kalkulator.Sederhana.txt)
-
+Karena method Hapus memanggil requestFocus() pada isian pertama setelah mengosongkan semua isian, sehingga pengguna bisa langsung mengetik data baru tanpa mengklik isian itu dulu. 
 
