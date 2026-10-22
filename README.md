@@ -1,5 +1,3 @@
-[Eksperimen P02.txt](https://github.com/user-attachments/files/33807371/Eksperimen.P02.txt)[Deklarasi Penggunaan AI.txt](https://github.com/user-attachments/files/33807243/Deklarasi.Penggunaan.AI.txt)[Eksperimen Praktikum 4.txt](https://github.com/user-attachments/files/33807164/Eksperimen.Praktikum.4.txt)[Eksperimen Praktikum 2.txt](https://github.com/user-attachments/files/33807132/Eksperimen.Praktikum.2.txt)[Eksperimen Praktikum 2.txt](https://github.com/user-attachments/files/33807114/Eksperimen.Praktikum.2.txt)[G. Pertanyaan Refleksi.txt](https://github.com/user-attachments/files/33806959/G.Pertanyaan.Refleksi.txt)[Eksperimen P02.txt](https://github.com/user-attachments/files/33806892/Eksperimen.P02.txt)[Eksperimen Praktikum 4 Kalkulator Sederhana.txt](https://github.com/user-attachments/files/33706858/Eksperimen.Praktikum.4.Kalkulator.Sederhana.txt)# pbo2-2410010039
-
 # P01 SCREENSHOOT Lingkungan Java, Maven, Git
 <img width="1920" height="1080" alt="Screenshot (230)" src="https://github.com/user-attachments/assets/7f7db4aa-2f7b-431f-b340-e308ef6b1e70" />
 <img width="1920" height="1080" alt="Screenshot (231)" src="https://github.com/user-attachments/assets/80ff49c3-0a91-4cb6-9feb-01fa45a88485" />
@@ -32,6 +30,7 @@
  
 # Pertanyaan Refleksi P03
 [G. Pertanyaan Refleksi.txt](https://github.com/user-attachments/files/33806997/G.Pertanyaan.Refleksi.txt)
+
 1.Top-level container = wadah utama, contoh JFrame.
 Intermediate container = wadah di dalamnya, contoh JPanel.
 Atomic component = komponen yang langsung digunakan, contoh JButton.
@@ -51,6 +50,7 @@ Atomic component = komponen yang langsung digunakan, contoh JButton.
 
 # Eksperimen Praktikum 2 P04
 [Eksperimen Praktikum 2.txt](https://github.com/user-attachments/files/33807151/Eksperimen.Praktikum.2.txt)
+
 1. flowPanel: Alignment = Center, jendela dikecilkan
 Dengan alignment Center, komponen di setiap baris diposisikan di tengah panel, bukan rata kiri (default LEADING/LEFT) atau rata kanan.
 Saat jendela dikecilkan, FlowLayout melakukan wrap: komponen yang tidak muat pindah ke baris baru. Tiap baris tetap terpusat secara horizontal, sehingga sisa ruang kosong terbagi rata di kiri dan kanan.
@@ -63,6 +63,7 @@ Tinggi tetap sama dengan tinggi tombol, jadi tombol tidak ikut memanjang secara 
 
 # Eksperimen Praktikum 4 P04
 [Eksperimen Praktikum 4.txt](https://github.com/user-attachments/files/33807180/Eksperimen.Praktikum.4.txt)
+
 1. Weight X namaField = 0.0, lalu jendela dilebarkan
 Weight X menentukan siapa yang mendapat sisa ruang horizontal saat jendela melebar. Dengan nilai 0.0, namaField tidak mendapat bagian tambahan, jadi lebarnya tetap seperti ukuran awal (preferred size) dan tidak ikut memanjang. Ruang kosong akan dibiarkan di samping, atau diberikan ke komponen lain yang weight X-nya lebih dari 0. Sebelumnya (misalnya 1.0), isian ikut melebar mengikuti jendela.
 
@@ -76,6 +77,7 @@ Tanpa batas ukuran minimum, jendela bisa dikecilkan melebihi ruang yang dibutuhk
 
 # Pertanyaan Refleksi P04
 [G. Pertanyaan Refleksi P4.txt](https://github.com/user-attachments/files/33807065/G.Pertanyaan.Refleksi.P4.txt)
+
 1. Mengapa Null Layout dan Absolute Layout dihindari?
 Posisi dan ukuran komponen ditulis manual dalam piksel (setBounds), sehingga tidak menyesuaikan saat jendela diubah ukurannya. Tampilan juga bisa rusak di layar dengan resolusi atau DPI berbeda, saat font berubah, atau saat teks diganti bahasa lain. Kode pun sulit dirawat karena menambah satu komponen berarti menggeser koordinat semua yang lain.
 
@@ -96,10 +98,9 @@ Responsif (menyesuaikan ukuran jendela): isian ikut memanjang saat jendela dileb
 
 # Deklarasi Penggunaan AI
 [Deklarasi Penggunaan AI.txt](https://github.com/user-attachments/files/33807285/Deklarasi.Penggunaan.AI.txt)
+
 Deklarasi Penggunaan AI
-
 Alat yang digunakan: Claude (Anthropic).
-
 1.Menjelaskan konsep layout manager (BorderLayout, FlowLayout, GridLayout, dll.).
 2.Membantu merancang struktur tata letak antarmuka (GUI).
 3.Membantu menelusuri dan memperbaiki error (debugging) pada kode.
