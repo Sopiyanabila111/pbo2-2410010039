@@ -1,4 +1,4 @@
-[Eksperimen Praktikum 4 Kalkulator Sederhana.txt](https://github.com/user-attachments/files/33706858/Eksperimen.Praktikum.4.Kalkulator.Sederhana.txt)# pbo2-2410010039
+[Eksperimen P02.txt](https://github.com/user-attachments/files/33806892/Eksperimen.P02.txt)[Eksperimen Praktikum 4 Kalkulator Sederhana.txt](https://github.com/user-attachments/files/33706858/Eksperimen.Praktikum.4.Kalkulator.Sederhana.txt)# pbo2-2410010039
 
 # P01 SCREENSHOOT Lingkungan Java, Maven, Git
 <img width="1920" height="1080" alt="Screenshot (230)" src="https://github.com/user-attachments/assets/7f7db4aa-2f7b-431f-b340-e308ef6b1e70" />
@@ -10,7 +10,14 @@
 <img width="638" height="271" alt="Screenshot 2026-10-13 150342" src="https://github.com/user-attachments/assets/aec1fed1-c130-492a-9ef7-4e601f056eb7" />
 
 # Eksperimen P02
-https://github.com/Sopiyanabila111/pbo2-2410010039/blob/main/p02-perpustakaan-mini/Eksperimen%20P02.txt
+[Upload1.Error, karena constructor Koleksi tidak sesuai parameternya.
+
+2.Ada @Override → error. Kalau dihapus → dianggap method baru.
+
+3.Buku tetap dibuat, tapi judulnya kosong.
+
+4.Melanggar enkapsulasi, karena status diubah langsung dari maining Eksperimen P02.txt…]()
+
 
 # P03 SCREENSHOOT Komponen GUI Swing
 <img width="791" height="479" alt="Screenshot 2026-10-02 210007" src="https://github.com/user-attachments/assets/f4c89c9d-772f-40be-9e63-28a2cf2da046" />
