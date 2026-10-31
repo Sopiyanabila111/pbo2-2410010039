@@ -199,6 +199,7 @@ Deklarasi Penggunaan AI P06
 
 
 # Tautan video Demo Mini Proyek P07
+https://drive.google.com/file/d/1y_OzZOO_z6M8UaUJb1ibteymZXQRbNyK/view?usp=sharing
 
 # Eksperimen Praktikum 5 P07
 [EKSPERIMEN PRAKTIKUM 5 P07.txt](https://github.com/user-attachments/files/34213296/EKSPERIMEN.PRAKTIKUM.5.P07.txt)
