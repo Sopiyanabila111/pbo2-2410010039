@@ -183,9 +183,6 @@ Fokus pindah ke isian Nama. Yang mengaturnya adalah properti displayedMnemonic p
 6. Isi beberapa isian, klik Batal, pilih No
 Ya, data tetap ada. Dialog konfirmasi (JOptionPane) hanya melanjutkan pengosongan form jika memilih Yes. Jika memilih No, method langsung selesai tanpa mengubah isian apa pun.
 
-# Tautan video Demo Mini Proyek P07
-https://drive.google.com/file/d/1y_OzZOO_z6M8UaUJb1ibteymZXQRbNyK/view?usp=sharing
-
 # E. Lembar Peer Review Heuristik (Nama peninjau: Akbar Ihsan Nugraha)
 <img width="466" height="240" alt="Screenshot 2026-10-31 174957" src="https://github.com/user-attachments/assets/bb176652-ba14-401a-9783-0ab8b1fc52b6" />
 
@@ -206,7 +203,7 @@ Deklarasi Penggunaan AI P06
 5.Seluruh eksperimen tetap saya jalankan sendiri dan hasilnya saya verifikasi sebelum dilaporkan.
 
 
-# Eksperimen Praktikum 5 P07
+#  P07 Tabel dan Menu (Eksperimen Praktikum 5) 
 [EKSPERIMEN PRAKTIKUM 5 P07.txt](https://github.com/user-attachments/files/34213296/EKSPERIMEN.PRAKTIKUM.5.P07.txt)
 EKSPERIMEN PRAKTIKUM 5 P07
 
@@ -227,6 +224,11 @@ Baris yang berubah di initComponents() adalah yang memanggil hapusItem.setAccele
 
 6. private KontakTableModel model; lalu model = new KontakTableModel(); setelah initComponents()
 Akan muncul NullPointerException. Di dalam initComponents(), komponen (misalnya kontakTable) dibuat dan memakai model, tetapi saat itu model masih null karena baru diisi setelahnya. Urutan inisialisasi harus benar: model dibuat dulu (atau lewat deklarasi = new KontakTableModel()), baru initComponents() dipanggil.
+
+# P07 Mini Proyek
+
+# Tautan video Demo Mini Proyek P07
+https://drive.google.com/file/d/1y_OzZOO_z6M8UaUJb1ibteymZXQRbNyK/view?usp=sharing
 
 # Deklarasi penggunaan AI
 [Deklarasi Penggunaan AI P07.txt](https://github.com/user-attachments/files/34213331/Deklarasi.Penggunaan.AI.P07.txt)
