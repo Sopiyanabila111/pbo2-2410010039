@@ -201,6 +201,11 @@ Deklarasi Penggunaan AI P06
 # Tautan video Demo Mini Proyek P07
 https://drive.google.com/file/d/1y_OzZOO_z6M8UaUJb1ibteymZXQRbNyK/view?usp=sharing
 
+# E. Lembar Peer Review Heuristik
+<img width="466" height="240" alt="Screenshot 2026-10-31 174957" src="https://github.com/user-attachments/assets/bb176652-ba14-401a-9783-0ab8b1fc52b6" />
+
+<img width="850" height="376" alt="Screenshot 2026-10-31 175542" src="https://github.com/user-attachments/assets/5573c362-a637-4afe-b02e-997fe1601cd2" />
+
 # Eksperimen Praktikum 5 P07
 [EKSPERIMEN PRAKTIKUM 5 P07.txt](https://github.com/user-attachments/files/34213296/EKSPERIMEN.PRAKTIKUM.5.P07.txt)
 EKSPERIMEN PRAKTIKUM 5 P07
