@@ -150,3 +150,83 @@ Tab Source: tambahkan penanganan klik untuk tombol itu (lambda atau event action
 3. Mengapa kursor langsung di isian pertama?
 Karena method Hapus memanggil requestFocus() pada isian pertama setelah mengosongkan semua isian, sehingga pengguna bisa langsung mengetik data baru tanpa mengklik isian itu dulu. 
 
+
+# SCREENSHOOT Validasi Input
+
+# Tangkapan layar (screenshot) form dengan pesan kesalahan
+<img width="349" height="417" alt="Screenshot 2026-10-31 164118" src="https://github.com/user-attachments/assets/b46dfcc1-b38e-4d98-92a4-27204d853d21" />
+
+# Tangkapan layar (screenshot) jendela Navigator yang memperlihatkan label pesan
+<img width="224" height="419" alt="Screenshot 2026-10-31 164838" src="https://github.com/user-attachments/assets/3edc5dbc-2ccd-4922-9b7b-16ebceb370a4" />
+<img width="194" height="293" alt="Screenshot 2026-10-31 164846" src="https://github.com/user-attachments/assets/ea5ff292-3706-4377-8d07-8e7f587f3da5" />
+
+# Eksperimen praktikum 4 P06
+[EKSPERIMEN PRAKTIKUM 4 P06.txt](https://github.com/user-attachments/files/34213230/EKSPERIMEN.PRAKTIKUM.4.P06.txt)
+EKSPERIMEN PRAKTIKUM 4 P06
+
+1. Mengetik huruf pada isian NPM
+Huruf yang diketik tidak muncul di isian NPM karena ditolak. Penyebabnya baris di npmFieldKeyTyped yang memanggil evt.consume(), biasanya di dalam if yang memeriksa apakah karakter bukan angka (misalnya if (!Character.isDigit(c)) { evt.consume(); }). Consume membuang event sehingga karakter tidak masuk ke field.
+
+2. Email diisi siti@ lalu tekan Tab
+Pesan kesalahan muncul saat isian email kehilangan fokus (focusLost), yaitu tepat ketika Tab ditekan dan fokus pindah ke komponen berikutnya. Di saat itu validasi dijalankan dan format email yang tidak lengkap (siti@) terdeteksi tidak valid.
+
+3. Klik isian Nama tanpa mengetik, lalu Tab
+Tidak ada pesan kesalahan karena validasi hanya berjalan jika isian sudah diubah atau diisi (misalnya dicek dengan flag "sudah disentuh" atau hanya memvalidasi saat teks tidak kosong). Isian yang hanya mendapat fokus lalu ditinggalkan tanpa input dianggap belum dimulai, sehingga tidak dianggap salah. Validasi isian kosong baru dilakukan saat tombol Daftar diklik.
+
+4. Centang persetujuan, klik Daftar dengan form kosong
+Fokus pindah ke isian pertama yang tidak valid, yaitu isian paling atas yang kosong (biasanya NPM atau Nama). Ini terjadi karena method validasi memanggil requestFocus() pada isian pertama yang gagal diperiksa, lalu berhenti.
+
+5. Alt + N
+Fokus pindah ke isian Nama. Yang mengaturnya adalah properti displayedMnemonic pada label Nama (diisi huruf N), bersama properti labelFor yang menunjuk ke isian Nama. Saat Alt+N ditekan, label meneruskan fokus ke komponen yang ditunjuk labelFor.
+
+6. Isi beberapa isian, klik Batal, pilih No
+Ya, data tetap ada. Dialog konfirmasi (JOptionPane) hanya melanjutkan pengosongan form jika memilih Yes. Jika memilih No, method langsung selesai tanpa mengubah isian apa pun.
+
+# Deklarasi penggunaan AI
+[Deklarasi Penggunaan AI P06.txt](https://github.com/user-attachments/files/34213355/Deklarasi.Penggunaan.AI.P06.txt)
+Deklarasi Penggunaan AI P06
+
+1.Alat yang dipakai: Claude (Anthropic).
+
+2.Keperluan: membantu memahami konsep pada modul praktikum, seperti event handling dan validasi input pada Swing.
+
+3.Keperluan: menjelaskan kemungkinan hasil dari setiap eksperimen sebagai bahan pembanding.
+
+4.Keperluan: merapikan penulisan jawaban agar singkat dan jelas.
+
+5.Seluruh eksperimen tetap saya jalankan sendiri dan hasilnya saya verifikasi sebelum dilaporkan.
+
+
+# Tautan video Demo Mini Proyek P07
+
+# Eksperimen Praktikum 5 P07
+[EKSPERIMEN PRAKTIKUM 5 P07.txt](https://github.com/user-attachments/files/34213296/EKSPERIMEN.PRAKTIKUM.5.P07.txt)
+EKSPERIMEN PRAKTIKUM 5 P07
+
+1. Komentar fireTableRowsInserted(baris, baris);
+Tabel tidak langsung berubah. Data memang masuk ke list model, tetapi JTable tidak diberi tahu ada baris baru, sehingga tampilan baru ter-update setelah di-refresh (misalnya saat filter/pencarian atau aplikasi dibuka ulang). Method ini yang memberi sinyal ke JTable agar menggambar ulang.
+
+2. return kontakTable.getSelectedRow();
+Yang muncul di dialog konfirmasi adalah nama kontak yang salah, bukan Ahmad Fauzi. Saat hasil pencarian difilter ("ah"), indeks baris di tampilan (view) berbeda dengan indeks di model. getSelectedRow() mengembalikan indeks view tanpa dikonversi dengan convertRowIndexToModel(), sehingga yang terambil adalah kontak lain pada indeks model yang sama. Akibatnya kontak yang salah bisa ikut terhapus.
+
+3. super(pemilik, judul, false)
+Dialog menjadi non-modal. Jendela utama tetap bisa diklik dan digunakan selagi dialog terbuka. Kontak yang ditambahkan tetap masuk ke tabel, tetapi pengguna bisa membuka dialog berkali-kali atau mengubah data lain secara bersamaan, sehingga alurnya tidak terkontrol.
+
+4. Ctrl+E dan Ctrl+D tidak bekerja tanpa baris dipilih
+Karena aksi Edit dan Hapus membutuhkan baris target. Jika tidak ada baris dipilih, baris bernilai -1 dan method menolak melanjutkan (aksi dinonaktifkan atau dicek dengan if (baris < 0) return;). Ctrl+N tetap jalan karena tambah kontak tidak bergantung pada pilihan baris.
+
+5. Accelerator hapusItem diubah menjadi Delete tanpa Ctrl
+Baris yang berubah di initComponents() adalah yang memanggil hapusItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_DELETE, 0)); Nilai modifier java.awt.event.InputEvent.CTRL_DOWN_MASK diganti menjadi 0.
+
+6. private KontakTableModel model; lalu model = new KontakTableModel(); setelah initComponents()
+Akan muncul NullPointerException. Di dalam initComponents(), komponen (misalnya kontakTable) dibuat dan memakai model, tetapi saat itu model masih null karena baru diisi setelahnya. Urutan inisialisasi harus benar: model dibuat dulu (atau lewat deklarasi = new KontakTableModel()), baru initComponents() dipanggil.
+
+# Deklarasi penggunaan AI
+[Deklarasi Penggunaan AI P07.txt](https://github.com/user-attachments/files/34213331/Deklarasi.Penggunaan.AI.P07.txt)
+Deklarasi Penggunaan AI P07
+
+1.Alat yang dipakai: Claude (Anthropic).
+2.Keperluan: membantu memahami konsep pada modul praktikum, seperti TableModel, dialog, dan pintasan keyboard pada Swing.
+3.Keperluan: menjelaskan kemungkinan hasil dari setiap eksperimen sebagai bahan pembanding.
+4.Keperluan: merapikan penulisan jawaban agar singkat dan jelas.
+5.Seluruh eksperimen tetap saya jalankan sendiri dan hasilnya saya verifikasi sebelum dilaporkan.
