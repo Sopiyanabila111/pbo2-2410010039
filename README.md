@@ -151,7 +151,7 @@ Tab Source: tambahkan penanganan klik untuk tombol itu (lambda atau event action
 Karena method Hapus memanggil requestFocus() pada isian pertama setelah mengosongkan semua isian, sehingga pengguna bisa langsung mengetik data baru tanpa mengklik isian itu dulu. 
 
 
-# SCREENSHOOT Validasi Input
+# P06 SCREENSHOOT Validasi Input
 
 # Tangkapan layar (screenshot) form dengan pesan kesalahan
 <img width="349" height="417" alt="Screenshot 2026-10-31 164118" src="https://github.com/user-attachments/assets/b46dfcc1-b38e-4d98-92a4-27204d853d21" />
@@ -161,7 +161,7 @@ Karena method Hapus memanggil requestFocus() pada isian pertama setelah mengoson
 
 <img width="194" height="293" alt="Screenshot 2026-10-31 164846" src="https://github.com/user-attachments/assets/ea5ff292-3706-4377-8d07-8e7f587f3da5" />
 
-# Eksperimen praktikum 4 P06
+# Eksperimen Praktikum 4 P06
 [EKSPERIMEN PRAKTIKUM 4 P06.txt](https://github.com/user-attachments/files/34213230/EKSPERIMEN.PRAKTIKUM.4.P06.txt)
 EKSPERIMEN PRAKTIKUM 4 P06
 
@@ -183,6 +183,14 @@ Fokus pindah ke isian Nama. Yang mengaturnya adalah properti displayedMnemonic p
 6. Isi beberapa isian, klik Batal, pilih No
 Ya, data tetap ada. Dialog konfirmasi (JOptionPane) hanya melanjutkan pengosongan form jika memilih Yes. Jika memilih No, method langsung selesai tanpa mengubah isian apa pun.
 
+# Tautan video Demo Mini Proyek P07
+https://drive.google.com/file/d/1y_OzZOO_z6M8UaUJb1ibteymZXQRbNyK/view?usp=sharing
+
+# E. Lembar Peer Review Heuristik (Nama peninjau: Akbar Ihsan Nugraha)
+<img width="466" height="240" alt="Screenshot 2026-10-31 174957" src="https://github.com/user-attachments/assets/bb176652-ba14-401a-9783-0ab8b1fc52b6" />
+
+<img width="850" height="376" alt="Screenshot 2026-10-31 175542" src="https://github.com/user-attachments/assets/5573c362-a637-4afe-b02e-997fe1601cd2" />
+
 # Deklarasi penggunaan AI
 [Deklarasi Penggunaan AI P06.txt](https://github.com/user-attachments/files/34213355/Deklarasi.Penggunaan.AI.P06.txt)
 Deklarasi Penggunaan AI P06
@@ -197,14 +205,6 @@ Deklarasi Penggunaan AI P06
 
 5.Seluruh eksperimen tetap saya jalankan sendiri dan hasilnya saya verifikasi sebelum dilaporkan.
 
-
-# Tautan video Demo Mini Proyek P07
-https://drive.google.com/file/d/1y_OzZOO_z6M8UaUJb1ibteymZXQRbNyK/view?usp=sharing
-
-# E. Lembar Peer Review Heuristik
-<img width="466" height="240" alt="Screenshot 2026-10-31 174957" src="https://github.com/user-attachments/assets/bb176652-ba14-401a-9783-0ab8b1fc52b6" />
-
-<img width="850" height="376" alt="Screenshot 2026-10-31 175542" src="https://github.com/user-attachments/assets/5573c362-a637-4afe-b02e-997fe1601cd2" />
 
 # Eksperimen Praktikum 5 P07
 [EKSPERIMEN PRAKTIKUM 5 P07.txt](https://github.com/user-attachments/files/34213296/EKSPERIMEN.PRAKTIKUM.5.P07.txt)
