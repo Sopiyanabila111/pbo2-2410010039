@@ -158,6 +158,7 @@ Karena method Hapus memanggil requestFocus() pada isian pertama setelah mengoson
 
 # Tangkapan layar (screenshot) jendela Navigator yang memperlihatkan label pesan
 <img width="224" height="419" alt="Screenshot 2026-10-31 164838" src="https://github.com/user-attachments/assets/3edc5dbc-2ccd-4922-9b7b-16ebceb370a4" />
+
 <img width="194" height="293" alt="Screenshot 2026-10-31 164846" src="https://github.com/user-attachments/assets/ea5ff292-3706-4377-8d07-8e7f587f3da5" />
 
 # Eksperimen praktikum 4 P06
@@ -226,7 +227,11 @@ Akan muncul NullPointerException. Di dalam initComponents(), komponen (misalnya 
 Deklarasi Penggunaan AI P07
 
 1.Alat yang dipakai: Claude (Anthropic).
+
 2.Keperluan: membantu memahami konsep pada modul praktikum, seperti TableModel, dialog, dan pintasan keyboard pada Swing.
+
 3.Keperluan: menjelaskan kemungkinan hasil dari setiap eksperimen sebagai bahan pembanding.
+
 4.Keperluan: merapikan penulisan jawaban agar singkat dan jelas.
+
 5.Seluruh eksperimen tetap saya jalankan sendiri dan hasilnya saya verifikasi sebelum dilaporkan.
