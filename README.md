@@ -228,7 +228,7 @@ Akan muncul NullPointerException. Di dalam initComponents(), komponen (misalnya 
 # P07 Mini Proyek
 
 # Tautan video Demo Mini Proyek P07
-https://drive.google.com/file/d/1y_OzZOO_z6M8UaUJb1ibteymZXQRbNyK/view?usp=sharing
+https://drive.google.com/file/d/1YP5iYkJAOW_RSr7tRZzU-F4cn3ScY8gS/view?usp=drivesdk
 
 # Deklarasi penggunaan AI
 [Deklarasi Penggunaan AI P07.txt](https://github.com/user-attachments/files/34213331/Deklarasi.Penggunaan.AI.P07.txt)
