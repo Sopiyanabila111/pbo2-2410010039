@@ -4,9 +4,6 @@
  */
 package id.ac.uniska.pbo2.p08;
 
-//NAMA:AKBAR IHSAN NUGRAHA
-//NPM:2410010447
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
